@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;;
+}
+
+/*ESTILOS DEL HEADER*/
+header{
+    padding: 8px 8px;
+    position: relative;
+    background-color: #222222;
+}
+
+/*.container__login-tablet{
+    display: none;
+}*/
+
+.container__login-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__login-mobile .logo-ktm{
+    width: 100px;
+}
+
+.boton__login{
+    border: none;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(../logos/carritoCompras-48.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s all;
+}
+
+.boton__login:hover{
+    transform: scale(1.5);
+}
+
+.inactive{
+    display: none;
+}
+
+.container__carrito{
+    width: 290px;
+    height: auto;
+    background-color: #F5F5F5;
+    padding: 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: calc(50% - 150px);
+}
+
+.container__carrito li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container__carrito li img{
+    width: 120px;
+}
+
+.container__carrito .descripcion__producto{
+    margin-left: 10px;
+}
+
+.container__producto li p{
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    color: #2A7AE4;
+}
+
+.eliminar__producto{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-image: url(../logos/basura-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.eliminar__producto:hover{
+    transform: scale(1.5);
+}
+
+
+/*ESTILOS DEL MAIN*/
+main{
+    background-color: #F5F5F5;
+}
+
+main h1{
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #464646;
+}
+
+main .container__inputs{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container__inputs .inputsP{
+    width: 100%;
+    height: 56px;
+    padding: 5px 5px;
+    margin-bottom: 15px;
+}
+
+main .container__inputs .Agregar-prodducto{
+    width: 70%;
+    height: 51px;
+    border: none;
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+.Agregar-prodducto::before, .Agregar-prodducto::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.Agregar-prodducto:hover{
+   box-shadow: inset -10.5em 0 0 0 #fc8e07, inset 10.5em 0 0 0 #fc8e07;
+}
+
+/*ESTILOS DEL FOOTER*/
+footer{
+    background-color: #222222;
+    padding: 10px 10px;
+}
+
+footer .logo-ktm{
+    width: 120px;
+}
+
+.quienesSomos{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.quienesSomos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quienesSomos a{
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #cfcdcd;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.formulario{
+    padding: 10px 10px;
+}
+
+.formulario h1{
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #cfcdcd;
+}
+
+.formulario input, textarea{
+    width: 100%;
+    height: 56px;
+    margin-bottom: 10px;
+}
+
+.formulario button{
+    width: 133px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    border: none;
+    color: #FFFFFF;
+    background-color: #2A7AE4;
+}
+
+.input-logIn{
+    box-sizing: border-box;
+    width: 275px;
+    height: 40px;
+    padding: 5px 5px;
+    margin-bottom: 15px;
+}
+
+.input-logIn::placeholder{
+    visibility: hidden;
+    color: #464646;
+}
+
+.input-logIn:focus{
+    outline: none;
+}
+
+.input-label{
+    position: absolute;
+    top: 1.375rem;
+    transition:  all 0.26s;
+    font-size: 1.6rem;
+}
+
+.input-logIn:not(:placeholder-shown) + .input-label, .input-logIn:focus + .input-label{
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all 0.26s;
+}
+
+.input-container--invalid{
+    margin-bottom: 0.5rem;
+}
+
+.input-container--invalid .input-logIn{
+    border: 1px solid red;
+    border-radius: 8px;
+}
+
+.input-container--invalid .input-label{
+    color: red;
+}
+
+.input-message-error {
+    display: none;
+}
+
+.input-container--invalid .input-message-error {
+    color: red;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/nuevo-prod-mobile.css">
+    <link rel="stylesheet" href="../styles/nuevo-prod-tablet.css" media="(min-width: 640px)">
+    <link rel="stylesheet" href="../styles/nuevo-prod-desktop.css" media="(min-width: 1024px)">
+    <title>Agregar nuevo producto</title>
+</head>
+<body>
+    <header>
+        <div class="container__login-mobile">
+            <a href="./index.html">
+                <img src="../logos/ktm__logo.png" alt="logo-Alura-Geek" class="logo-ktm">
+            </a>
+            <button class="boton__login" id="btn__carrito"></button>
+        </div>
+        <!--div class="container__login-tablet container__login-desktop"> 
+            <img src="./logos/logoAluraGeek.svg" alt="">
+            <button class="boton__login" id="btn__carrito"></button>
+        </!--div-->
+
+        <section class="container__carrito inactive">
+            <!--ul id="carrito"></!--ul-->
+            <ul class="container__producto" id="carrito">
+                
+            </ul>
+         </section>
+    </header>
+
+    <main class="container__form">
+        <h1>Agregar nuevo producto</h1>
+        <form class="container__inputs" data-form>
+            <input type="url" name="" id="urlImagen" placeholder="URL de la imagen" class="inputsP" data-url>
+            <!--input type="text" name="" id="categoria" placeholder="Categoria" class="inputsP"-->
+            <input type="text" name="" id="nombre" placeholder="Nombre del producto" class="inputsP" data-nombre>
+            <input type="number" name="" id="precio" placeholder="$precio del producto" class="inputsP" data-precio>
+            <!--input type="text" name="" id="descripcion" placeholder="Descripcion del producto" class="inputsP"-->
+            <button class="Agregar-prodducto" id="agregar__producto">Agreagar al carrito</button>
+        </form>
+    </main>
+   
+    <footer>
+        <div class="quienesSomos">
+            <img src="../logos/ktm__logo.png" alt="" class="logo-ktm">
+            <div>
+                <a href="">Quienes somos</a>
+                <a href="">Politica de privacidad</a>
+                <a href="">Programa de fidelidad</a>
+                <a href="">Nuestras tiendas</a>
+                <a href="">Quiero ser franquisiado</a>
+                <a href="">Anuncie aqui</a>
+            </div>
+        </div>
+        <form action="" class="formulario">
+            <h1>Hable con nosotros</h1>
+            <div class="input-container">
+                <input type="text" placeholder="nombre" maxlength="40"  class="input-logIn" id="name" required data-tipo="nombre">
+                <span class="input-message-error"></span>
+                <span class="error"></span>
+            </div>
+
+            <div class="input-container">
+                <textarea name="" cols="30" rows="10" maxlength="120" placeholder="mensaje" class="input-logIn" id="mensaje" required data-tipo="nombre"></textarea>
+                <span class="input-message-error"></span>
+                <span class="error"></span>
+            </div>
+            <div class="containerBTNEnviar">
+                <button type="button" id="btnMensaje">Enviar mensaje</button>
+            </div>
+        </form>
+    </footer>
+    <script src="../controllers/crear-producto-controller.js" type="module"></script>
+</body>
+</html>

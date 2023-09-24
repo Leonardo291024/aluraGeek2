@@ -1,0 +1,28 @@
+{
+  "cliente": [
+    {
+      "nombre": "Leonardo",
+      "correo": "leo@git.com",
+      "contrasena": "1234",
+      "id": 1
+    },
+    {
+      "nombre": "marcos",
+      "correo": "guzmanmarcosguzman@outlook.com",
+      "contrasena": "Kraken56",
+      "id": 2
+    },
+    {
+      "nombre": "sandra",
+      "correo": "sandi@alura.com",
+      "contrasena": "Sandi89",
+      "id": 3
+    },
+    {
+      "nombre": "daniela",
+      "correo": "daniela@alura.com",
+      "contrasena": "Dani45",
+      "id": 4
+    }
+  ]
+}

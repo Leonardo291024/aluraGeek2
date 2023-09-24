@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/logIn-mobile.css">
+    <link rel="stylesheet" href="../styles/logIn-tablet.css" media="(min-width:768px)">
+    <link rel="stylesheet" href="../styles/logIn-desktop.css" media="(min-width:1024px)">
+    <title>Iniciar secion</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="../logos/ktm__logo.png" alt="" class="logo-ktm">
+        </a>
+        <img src="../logos/icono-buscador.svg" alt="" class="icon-buscador">
+        <div class="container__login-tablet container__login-desktop">
+            <div class="container__buscador">
+                <input type="text" placeholder="¿Que deseas buscar?">
+                <button></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Iniciar sesion</h1>
+        <form data-form>
+            <div class="input-container">
+                <input type="text" name="name"  class="input-logIn" id="name" required data-nombre>
+                <label for="name" class="input-label">Nombre</label>
+                <span class="input-message-error"></span>
+            </div>
+            <div  class="input-container">
+                <input type="email" name="email" id="email" class="input-logIn" required data-email>
+                <label for="email" class="input-label">email</label>
+                <span class="input-message-error"></span>
+            </div>
+            <div  class="input-container">
+                <input type="password" name="" class="input-logIn" required pattern="^(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{6,12}$" title="Al menos 6 caracteres, maximo 12 caracteres debe contener una letra minuscula, una letra mayuscula, un numero y no puede contener caracteres especiales." id="password" data-pasword>
+                <label for="password" class="input-label">contraseña</label>
+                <span class="input-message-error"></span>
+            </div>
+            <div>
+               <button class="entrar">Registrarse</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="quienesSomos">
+            <img src="../logos/ktm__logo.png" alt="" class="logo-ktm">
+            <div>
+                <a href="">Quienes somos</a>
+                <a href="">Politica de privacidad</a>
+                <a href="">Programa de fidelidad</a>
+                <a href="">Nuestras tiendas</a>
+                <a href="">Quiero ser franquisiado</a>
+                <a href="">Anuncie aqui</a>
+            </div>
+        </div>
+        <form action="" class="formulario" data-form>
+            <h1>Hable con nosotros</h1>
+            <div class="input-container">
+                <input type="text" placeholder="nombre" maxlength="40"  class="input-logIn" required>
+                <span class="input-message-error"></span>
+                <span class="error"></span>
+            </div>
+
+            <div class="input-container">
+                <textarea name="" cols="30" rows="10" maxlength="120" placeholder="mensaje" class="input-logIn" id="mensaje" required data-tipo="nombre"></textarea>
+                <span class="input-message-error"></span>
+                <span class="error"></span>
+            </div>
+            <div class="containerBTNEnviar">
+                <button type="button" id="btnMensaje">Enviar mensaje</button>
+            </div>
+        </form>
+    </footer>
+    <script type="module" src="../controllers/crear-cliente-controller.js"></script>
+</body>
+</html>

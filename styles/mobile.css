@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;;
+}
+
+/*ESTILOS DEL HEADER*/
+header{
+    padding: 8px 8px;
+    background-color: #222222;
+}
+
+.container__login-tablet{
+    display: none;
+}
+
+.container__login-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__login-mobile .logo-ktm{
+    width: 100px;
+}
+
+.boton__login{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #2A7AE4;
+    text-decoration: none;
+    width: 133px;
+    height: 40px;
+    border: 1px solid #2A7AE4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*ESTILOS DEL BANNER*/
+.banner{
+    background-image: url(../productosImg/ktm-baner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 192px;
+    padding: 10px 10px;
+}
+
+.banner__container-div{
+    padding-top: 45px;
+}
+
+.banner__container-div h1{
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.banner__container-div p{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.boton__baner{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #FFFFFF;
+    background-color: #2A7AE4;
+    text-decoration: none;
+    width: 118px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*ESTILOS DEL MAIN*/
+main{
+    padding: 10px 10px;
+}
+
+.seccion__products .title__products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.title__products h1{
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    color: #464646;
+}
+
+.title__products a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.title__products a p{
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #2A7AE4;
+    margin-right: 5px;
+}
+
+.container__productos-starWars, .container__productos-consolas, .container__productos-diversos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container__producto{
+    margin-bottom: 30px;
+}
+
+.container__producto img{
+    width: 140px;
+}
+
+.container__producto .name__product{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #464646;
+}
+
+.container__producto .price__product{
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #464646;
+}
+
+.container__producto a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #2A7AE4;
+}
+
+/*ESTILOS DEL FOOTER*/
+footer{
+    background-color: #0e0e0e;
+    padding: 10px 10px;
+}
+
+.quienesSomos{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.logo-ktm-footer{
+    width: 176px;
+}
+
+.quienesSomos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quienesSomos a{
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #b2b2b2;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.formulario{
+    padding: 10px 10px;
+}
+
+.formulario h1{
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #b2b2b2;
+}
+
+.formulario input, textarea{
+    width: 100%;
+    height: 56px;
+    margin-bottom: 10px;
+}
+
+.formulario button{
+    width: 133px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    border: none;
+    color: #FFFFFF;
+    background-color: #2A7AE4;
+} 
+
+.input-logIn{
+    box-sizing: border-box;
+    width: 275px;
+    height: 40px;
+    padding: 5px 5px;
+    margin-bottom: 15px;
+}
+
+.input-logIn::placeholder{
+    visibility: hidden;
+    color: #464646;
+}
+
+.input-logIn:focus{
+    outline: none;
+}
+
+.input-label{
+    position: absolute;
+    top: 1.375rem;
+    transition:  all 0.26s;
+    font-size: 1.6rem;
+}
+
+.input-logIn:not(:placeholder-shown) + .input-label, .input-logIn:focus + .input-label{
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all 0.26s;
+}
+
+.input-container--invalid{
+    margin-bottom: 0.5rem;
+}
+
+.input-container--invalid .input-logIn{
+    border: 1px solid red;
+    border-radius: 8px;
+}
+
+.input-container--invalid .input-label{
+    color: red;
+}
+
+.input-message-error {
+    display: none;
+}
+
+.input-container--invalid .input-message-error {
+    color: red;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }

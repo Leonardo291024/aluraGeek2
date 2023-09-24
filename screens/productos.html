@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/productos-mobile.css">
+    <link rel="stylesheet" href="../styles/productos-tablet.css" media="(min-width:768px)">
+    <link rel="stylesheet" href="../styles/productos-desktop.css" media="(min-width:1024px)">
+    <title>Productos</title>
+</head>
+<body>
+    <header>
+        <img src="../logos/logoAluraGeek.svg" alt="" class="logo-alura">
+        <img src="../logos/icono-buscador.svg" alt="" class="icon-buscador">
+        <div class="container__login-tablet container__login-desktop">
+            <div class="container__buscador">
+                <input type="text" placeholder="¿Que deseas buscar?">
+                <button></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="todosLosProductos">
+            <h1>Todos los productos</h1>
+            <a href="./nuevoProducto.html">Agregar producto</a>
+        </div>
+
+        <section class="seccion__products" data-product>
+            <section class="container__productos-starWars">
+                <article class="container__producto">
+                    <img src="../productosImg/starWars1.png" alt="">
+                    <p class="name__product">Producto XYZ</p>
+                    <p class="price__product">R$ 60,00</p>
+                    <a href="">#1111111</a>
+                </article>
+                <article class="container__producto">
+                    <img src="../productosImg/starWars2.png" alt="">
+                    <p class="name__product">Producto XYZ</p>
+                    <p class="price__product">R$ 60,00</p>
+                    <a href="">#1111111</a>
+                </article>
+                <article class="container__producto">
+                    <img src="../productosImg/starWars3.png" alt="">
+                    <p class="name__product">Producto XYZ</p>
+                    <p class="price__product">R$ 60,00</p>
+                    <a href="">#1111111</a>
+                </article>
+                <article class="container__producto">
+                    <img src="../productosImg/starWars4.png" alt="">
+                    <p class="name__product">Producto XYZ</p>
+                    <p class="price__product">R$ 60,00</p>
+                    <a href="">#1111111</a>
+                </article>
+            </section>
+
+            <section class="seccion__products">
+                <section class="container__productos-consolas">
+                    <article class="container__producto">
+                        <img src="../productosImg/consolas1.png" alt="">
+                        <p class="name__product">Producto XYZ</p>
+                        <p class="price__product">R$ 60,00</p>
+                        <a href="">#1111111</a>
+                    </article>
+                    <article class="container__producto">
+                        <img src="../productosImg/consolas2.png" alt="">
+                        <p class="name__product">Producto XYZ</p>
+                        <p class="price__product">R$ 60,00</p>
+                        <a href="">#1111111</a>
+                    </article>
+                    <article class="container__producto">
+                        <img src="../productosImg/consolas3.png" alt="">
+                        <p class="name__product">Producto XYZ</p>
+                        <p class="price__product">R$ 60,00</p>
+                        <a href="">#1111111</a>
+                    </article>
+                    <article class="container__producto">
+                        <img src="../productosImg/consolas4.png" alt="">
+                        <p class="name__product">Producto XYZ</p>
+                        <p class="price__product">R$ 60,00</p>
+                        <a href="">#1111111</a>
+                    </article>
+            </section>
+
+            <section class="seccion__products">
+                <section class="container__productos-diversos">
+                    <article class="container__producto">
+                        <img src="../productosImg/diversos1.png" alt="">
+                        <p class="name__product">Producto XYZ</p>
+                        <p class="price__product">R$ 60,00</p>
+                        <a href="">#1111111</a>
+                    </article>
+                    <article class="container__producto">
+                        <img src="../productosImg/diversos2.png" alt="">
+                        <p class="name__product">Producto XYZ</p>
+                        <p class="price__product">R$ 60,00</p>
+                        <a href="">#1111111</a>
+                    </article>
+                    <article class="container__producto">
+                        <img src="../productosImg/diversos3.png" alt="">
+                        <p class="name__product">Producto XYZ</p>
+                        <p class="price__product">R$ 60,00</p>
+                        <a href="">#1111111</a>
+                    </article>
+                    <article class="container__producto">
+                        <img src="../productosImg/diversos4.png" alt="">
+                        <p class="name__product">Producto XYZ</p>
+                        <p class="price__product">R$ 60,00</p>
+                        <a href="">#1111111</a>
+                    </article>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="quienesSomos">
+            <img src="../logos/logo-footer.svg" alt="">
+            <div>
+                <a href="">Quienes somos</a>
+                <a href="">Politica de privacidad</a>
+                <a href="">Programa de fidelidad</a>
+                <a href="">Nuestras tiendas</a>
+                <a href="">Quiero ser franquisiado</a>
+                <a href="">Anuncie aqui</a>
+            </div>
+        </div>
+         <form action="" class="formulario">
+            <h1>Hable con nosotros</h1>
+            <div class="input-container">
+                <input type="text" placeholder="nombre" maxlength="40"  class="input-logIn" id="name" required data-tipo="nombre">
+                <span class="input-message-error"></span>
+                  <span class="error"></span>
+            </div>
+
+            <div class="input-container">
+                <textarea name="" cols="30" rows="10" maxlength="120" placeholder="mensaje" class="input-logIn" id="mensaje" required data-tipo="nombre"></textarea>
+                <span class="input-message-error"></span>
+                <span class="error"></span>
+            </div>
+            <div class="containerBTNEnviar">
+                <button type="button" id="btnMensaje">Enviar mensaje</button>
+            </div>
+        </form>
+    </footer>
+    <script src="../controllers/producto-controller.js" type="module"></script>
+</body>
+</html>

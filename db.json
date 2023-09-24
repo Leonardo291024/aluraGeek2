@@ -1,0 +1,88 @@
+{
+  "producto": [
+    {
+      "name": "Moto1",
+      "imageUrl": "https://marti-motors.com/wp-content/uploads/2022/09/motos-naked.jpg",
+      "price": 999,
+      "id": 1
+    },
+    {
+      "name": "Moto2",
+      "imageUrl": "https://marti-motors.com/wp-content/uploads/2022/09/motos-naked.jpg",
+      "price": 999,
+      "id": 2
+    },
+    {
+      "name": "Moto3",
+      "imageUrl": "https://marti-motors.com/wp-content/uploads/2022/09/motos-naked.jpg",
+      "price": 999,
+      "id": 3
+    },
+    {
+      "name": "Moto4",
+      "imageUrl": "https://marti-motors.com/wp-content/uploads/2022/09/motos-naked.jpg",
+      "price": 999,
+      "id": 4
+    },
+    {
+      "imageUrl": "https://marti-motors.com/wp-content/uploads/2022/09/motos-naked.jpg",
+      "name": "Moto4",
+      "price": "999",
+      "id": 5
+    },
+    {
+      "imageUrl": "https://marti-motors.com/wp-content/uploads/2022/09/motos-naked.jpg",
+      "name": "Moto4",
+      "price": "999",
+      "id": 6
+    },
+    {
+      "imageUrl": "https://marti-motors.com/wp-content/uploads/2022/09/motos-naked.jpg",
+      "name": "Moto4",
+      "price": "999",
+      "id": 7
+    },
+    {
+      "imageUrl": "https://marti-motors.com/wp-content/uploads/2022/09/motos-naked.jpg",
+      "name": "Moto4",
+      "price": "999",
+      "id": 8
+    },
+    {
+      "imageUrl": "https://marti-motors.com/wp-content/uploads/2022/09/motos-naked.jpg",
+      "name": "Moto4",
+      "price": "999",
+      "id": 9
+    },
+    {
+      "imageUrl": "https://marti-motors.com/wp-content/uploads/2022/09/motos-naked.jpg",
+      "name": "Moto4",
+      "price": "999",
+      "id": 10
+    },
+    {
+      "imageUrl": "https://images.ctfassets.net/8zlbnewncp6f/mNVvIvkg6833NZHowrvLK/b4b2b536e320db8190e9d9aa7e904de5/KTM_DUKE_250_2.jpg?w=600&fm=webp&q=100",
+      "name": "Moto11",
+      "price": "999",
+      "id": 11
+    },
+    {
+      "imageUrl": "https://cdn05.zipify.com/Q1bbDpS3jK6zuJySAz0vqJyjP7U=/fit-in/3840x0/de930ffc17b741268b11cdee593ca172/462654_rsc4589-wotr-b_flat_eu_-global.jpeg",
+      "name": "Moto12",
+      "price": "999",
+      "id": 12
+    },
+    {
+      "imageUrl": "https://marti-motors.com/wp-content/uploads/2022/09/motos-naked.jpg",
+      "name": "Moto13",
+      "price": "999",
+      "id": 13
+    },
+    {
+      "imageUrl": "https://marti-motors.com/wp-content/uploads/2022/09/motos-naked.jpg",
+      "name": "KTM",
+      "price": "999",
+      "id": 14
+    }
+  ]
+}

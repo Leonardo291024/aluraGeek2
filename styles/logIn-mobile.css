@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*ESTILOS DEL HEADER*/
+header{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+}
+header .logo-ktm{
+    width: 100px;
+}
+
+.container__login-tablet{
+    display: none;
+}
+
+/*ESTILOS DEL MAIN*/
+main{
+    background-color: #F5F5F5;
+}
+
+main h1{
+    margin-bottom: 25px;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #464646;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container{
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+main form .input-logIn{
+    box-sizing: border-box;
+    width: 275px;
+    height: 40px;
+    padding: 5px 5px;
+    margin-bottom: 15px;
+}
+
+.input-logIn::placeholder{
+    visibility: hidden;
+    color: #464646;
+}
+
+.input-logIn:focus{
+    outline: none;
+}
+
+.input-label{
+    position: absolute;
+    top: 1.375rem;
+    transition:  all 0.26s;
+    font-size: 1.6rem;
+}
+
+.input-logIn:not(:placeholder-shown) + .input-label, .input-logIn:focus + .input-label{
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all 0.26s;
+}
+
+.input-container--invalid{
+    margin-bottom: 0.5rem;
+}
+
+.input-container--invalid .input-logIn{
+    border: 1px solid red;
+    border-radius: 8px;
+}
+
+.input-container--invalid .input-label{
+    color: red;
+}
+
+.input-message-error {
+    display: none;
+}
+
+.input-container--invalid .input-message-error {
+    color: red;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+main form .entrar{
+    width: 109px;
+    height: 40px;
+    border: none;
+    background-color: #fb591c;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/*ESTILOS DEL FOOTER*/
+footer{
+    background-color: #222222;
+    padding: 10px 10px;
+}
+
+footer .logo-ktm{
+    width: 120px;
+}
+
+.quienesSomos{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.quienesSomos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quienesSomos a{
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #b2b2b2;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.formulario{
+    padding: 10px 10px;
+}
+
+.formulario h1{
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #b2b2b2;
+}
+
+.formulario input, textarea{
+    width: 100%;
+    height: 56px;
+    margin-bottom: 10px;
+}
+
+.formulario button{
+    width: 133px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    border: none;
+    color: #FFFFFF;
+    background-color: #2A7AE4;
+}
